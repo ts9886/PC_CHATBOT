@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Computer Query Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="bot-info">
+                <img src="https://img.icons8.com/?size=96&id=1RueIplXPGd2&format=gif" alt="Bot Icon">
+                <div class="bot-text">
+                    <h2>ONLINE COMPUTER QUERY CHATBOT USING MACHINE LEARNING</h2>
+                    <p>Online | Ready to help</p>
+                </div>
+            </div>
+            <button id="clear-chat-btn" title="Clear Chat History">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
+
+        <div class="chat-window" id="chat-window">
+            <div class="message bot">
+                <p>Hello! I am Computer Query Bot. How can I help you today?</p>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" id="user-input" placeholder="Type your message here...">
+            <button id="voice-btn"><i class="fas fa-microphone"></i></button>
+            <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
